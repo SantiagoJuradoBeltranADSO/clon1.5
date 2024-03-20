@@ -1,0 +1,561 @@
+* {
+  color: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+:root {
+  --header: 90px;
+  --color-primary: rgba(255, 186, 0, 1);
+  --gris: rgba(36, 36, 36, 1);
+  --blanco: white;
+}
+
+.imagen {
+  background-image: url(Imagenes/inicio/a.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* Para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  height: 125vh; /* Establece la altura al 100% de la pantalla */
+  width: 100%; /* Establece el ancho al 100% de su contenedor */
+  margin-top: -10px;
+}
+.logo {
+  height: 70px;
+  width: 350px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+a {
+  color: inherit; /* Hereda el color del texto de su contenedor */
+  text-decoration: none; /* Elimina el subrayado */
+}
+.contenedor {
+  max-width: 100000px;
+  margin: 0 auto;
+}
+
+.header__menu {
+  height: var(--header);
+  display: flex;
+  justify-content: space-between;
+  color: var(--blanco);
+  padding-top: 10px;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin-right: 223px; /* Ajusta este valor según sea necesario para mover la barra de navegación a la derecha */
+  gap: 30px;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+  font-size: 35px;
+}
+.open {
+  margin-top: -40px;
+}
+#inicio {
+  display: grid;
+  justify-content: top;
+  margin-top: 200px;
+}
+.rectangulo {
+  position: absolute;
+  width: 100%; /* Asegura que el rectángulo ocupe todo el ancho del body */
+  height: 30%; /* Asegura que el rectángulo ocupe toda la altura del body */
+  background-color: var(
+    --color-primary
+  ); /* Establece el color del rectángulo */
+  margin-top: 340px;
+}
+
+.slider {
+  height: calc(100vh - var(--header));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.slider__iformacion {
+  max-width: 620px;
+  color: var(--blanco);
+  font-size: 50px;
+  margin-top: -540px;
+  margin-left: auto;
+  margin-right: 800px;
+}
+.negrilla {
+  font-weight: 1000; /* Establece un grado de negrita personalizado */
+}
+.as {
+  font-size: 130px;
+  line-height: 0.9;
+  margin-top: 27px;
+}
+.contenedor_nav {
+  display: grid;
+  position: relative;
+  grid-template-rows: 1fr 1fr; /* Divide el espacio en dos columnas de igual tamaño */
+  justify-content: space-between;
+}
+.slider__titulo {
+  font-size: 1rem;
+  padding-bottom: 1px;
+  color: var(--blanco);
+}
+
+.titulo__flaco {
+  font-weight: lighter;
+
+  color: var(--blanco);
+}
+.slider__parrafo {
+  color: var(--blanco);
+}
+
+.nav__boton {
+  display: grid;
+  margin-left: 1180px;
+  font-size: 60px;
+  display: flex;
+  margin-top: 60px;
+  position: absolute;
+  background-color: var(--color-primary);
+  border-color: var(--blanco);
+  color: var(--blanco);
+}
+
+.botons {
+  display: flex;
+  margin-top: 180px;
+  color: var(--blanco);
+}
+/* segunda sectio */
+
+.contenedor_slider {
+  position: relative; /* Establece el posicionamiento relativo para el contenedor */
+  display: grid;
+  grid-template-columns: 400px 1fr; /* Tres columnas de igual ancho */
+  margin-top: -10px;
+  width: auto; /* Ancho del contenedor */
+  height: 100vh; /* Altura del contenedor */
+  overflow: hidden; /* Evita que el contenido desborde del contenedor */
+  z-index: 1;
+}
+.color {
+  background-color: var(--gris);
+  z-index: -1;
+}
+
+.iten1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  margin-left: 150px;
+}
+
+.iten2 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: var(--blanco);
+  white-space: nowrap;
+}
+
+.im {
+  position: absolute;
+  height: 400px;
+  width: 650px;
+  z-index: 1;
+  display: flex;
+  margin-top: -10px;
+  margin-left: 854px;
+}
+
+.texto_total {
+  margin-right: 600px;
+  position: absolute;
+  font-size: 30px;
+}
+.texto {
+  font-size: 70px;
+}
+.rectangulo2 {
+  position: absolute;
+  display: flex;
+  margin-top: 245px;
+  margin-left: 230px;
+  width: 840px; /* Asegura que el rectángulo ocupe todo el ancho del body */
+  height: 170px; /* Asegura que el rectángulo ocupe toda la altura del body */
+  background-color: var(
+    --color-primary
+  ); /* Establece el color del rectángulo */
+  z-index: -1;
+}
+
+/**----------------------------------------------
+-------------------CARD-------------------------
+------------------------------------------------**/
+
+.contenedor_card {
+  display: flex;
+  gap: 6rem;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  width: 300px;
+
+  padding: 22px;
+  flex-direction: column;
+  gap: 2rem;
+
+  border-radius: 50px;
+}
+
+.card__title {
+  font-size: 2rem;
+  padding: 4px 0;
+  color: var(--color-primary);
+}
+
+.card__text {
+  color: black;
+}
+
+/* 4parte */
+.imgagen3 {
+  background-image: url(Imagenes/tercera/tercera.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* Para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  height: 155vh; /* Establece la altura al 100% de la pantalla */
+  width: 100%; /* Establece el ancho al 100% de su contenedor */
+  margin-top: -10px;
+}
+
+.contenedor_4 {
+  display: grid;
+  grid-template-rows: 100px 150px 1fr 1fr; /* Divide el espacio en dos columnas de igual tamaño */
+}
+
+.numero1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.estilo1 {
+  color: var(--color-primary);
+  font-size: 40px;
+  padding: 70px;
+  padding-right: 20px;
+}
+.numero2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+.estilo2 {
+  color: var(--color-primary);
+  font-size: 50px;
+  justify-content: center;
+  white-space: nowrap;
+  margin-right: 300px;
+}
+.borde {
+  position: relative; /* Añade posición relativa al contenedor */
+  width: calc(
+    100% - 300px
+  ); /* Ancho de la pantalla menos 300px para dejar espacio en el lado derecho */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Añade espacio alrededor del texto */
+  border: 3px solid var(--blanco); /* Borde sólido de 2px de color negro */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  margin-left: 256px;
+}
+
+.borde::after {
+  /* Pseudo-elemento para el borde derecho */
+  content: ""; /* Añade contenido al pseudo-elemento */
+  position: absolute; /* Añade posición absoluta al pseudo-elemento */
+  top: 0; /* Pega el pseudo-elemento al borde superior del contenedor */
+  right: 0; /* Pega el pseudo-elemento al borde derecho del contenedor */
+  width: 10%; /* Establece la altura del pseudo-elemento igual a la del contenedor */
+  width: 300%; /* Ancho del borde derecho */
+  border-left: 2px solid var(--blanco); /* Borde izquierdo del pseudo-elemento */
+}
+
+.numero3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: var(--color-primary);
+  margin-left: 520px;
+
+  height: 300px;
+}
+.numeros {
+  font-size: 30px;
+  margin-top: 150px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.item1 {
+  margin-top: 150px;
+  font-size: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+ul li {
+  list-style-type: none; /* Quita los puntos de las listas */
+}
+.text {
+  margin-right: 150px;
+  margin-top: -25px;
+}
+.num6 {
+  margin-right: 400px;
+  font-size: 30px;
+  margin-top: 100px;
+  background-color: rgba(255, 216, 1, 1);
+  background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del contenedor */
+  background-attachment: fixed; /* Fija el fondo para que no se desplace con el contenido */
+  align-items: center;
+  padding: 10px;
+}
+.numero4 {
+  display: flex;
+  margin-left: 520px;
+  align-items: center;
+}
+.item3 {
+  border: 2px solid rgb(255, 255, 255);
+  height: 70px; /* Establece la altura del pseudo-elemento igual a la del contenedor */
+  width: 100vh; /* Ancho del borde derecho */
+}
+
+/* navegacion2 */
+.contenedor_navegacion {
+  background-color: var(--gris);
+  margin-top: -10px;
+  width: auto; /* Ancho del contenedor */
+  height: 50vh; /* Altura del contenedor */
+  overflow: hidden; /* Evita que el contenido desborde del contenedor */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr; /* Tres columnas de igual ancho */
+  align-items: center;
+  justify-content: center;
+}
+.texto_nav {
+  align-items: center;
+}
+.textonav {
+  padding: 25px;
+}
+.uno {
+  justify-content: center;
+  margin-left: 140px;
+}
+.titulo_nav {
+  color: var(--color-primary);
+}
+.negrilla2 {
+  font-weight: 1000; /* Establece un grado de negrita personalizado */
+  color: var(--color-primary);
+}
+.tres {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0px;
+}
+
+/* MASTERCLASS */
+
+.contenedor_masterclass {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr; /* Tres columnas de igual ancho */
+  align-items: end;
+  justify-content: end;
+  padding: 90px;
+}
+.a {
+  margin-top: -10px;
+  background-image: url(Imagenes/tercera/cuarta.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* Para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  height: 170vh; /* Establece la altura al 100% de la pantalla */
+  width: 100%; /* Establece el ancho al 100% de su contenedor */
+  margin-top: -10px;
+}
+.primero {
+  padding-left: 200px;
+  padding-top: 100px;
+}
+.hora {
+  margin-left: 150px;
+}
+.hora__2 {
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.tercero {
+  background-color: var(--color-primary);
+  height: 90px;
+}
+.MASTERCLASS2 {
+  margin-top: 100px;
+}
+.segundo {
+  background-color: var(--color-primary);
+  padding: 30px;
+  margin-top: -60px;
+}
+
+/* GALERIA */
+
+.contendedor_gallery {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 90px;
+  position: relative;
+  height: 767px;
+  margin-top: -10px;
+  overflow: hidden;
+  z-index: 0;
+}
+.contenedor_5 {
+  background-color: var(--gris);
+  z-index: 1;
+}
+.contenedor_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual ancho */
+  overflow: hidden;
+  margin-left: -100px;
+  margin-right: 100px;
+  margin-top: -260px;
+}
+.titulo_galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 400px;
+  margin-top: -500px;
+}
+.galeriattl {
+  color: var(--color-primary);
+}
+.cinco {
+  height: 440px;
+  width: 650px;
+}
+
+.seis {
+  height: 60vh;
+  width: 440px;
+}
+
+.siete {
+  height: 60vh;
+  width: 440px;
+}
+.item_one {
+  transform: rotate(90deg);
+  background-color: var(
+    --color-primary
+  ); /* Establece el color del rectángulo */
+  z-index: -1;
+  position: absolute;
+}
+
+.contenedor_pizzeria {
+  margin-left: 550px;
+  margin-top: -507px;
+}
+.textox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 284px;
+  margin-top: 50px;
+}
+.rectangulo3 {
+  z-index: 0;
+  background-color: var(--color-primary);
+  font-size: 100px;
+  margin-top: 100px;
+  padding: 10px;
+  position: absolute;
+  height: 907px;
+  margin-top: 0px;
+  margin-left: 300px;
+  width: 220px;
+}
+.item_two {
+  margin-left: 400px;
+}
+.contenedorex {
+  padding: 20px;
+}
+.pizzeria {
+  padding-bottom: 564px;
+}
+.img_galeria {
+  padding-bottom: -100px;
+  background: url(Imagenes/b.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 8989px;
+  align-items: center;
+  /* width: 100%; */
+  margin-top: 22px;
+  padding-top: -145px;
+  height: 545px;
+  width: 1900px;
+  margin-left: -87px;
+}
+.pizzeria {
+  padding-bottom: 574px;
+}
+.pizeria1 {
+  margin-top: -636px;
+}
+
+/* PIE DE PAGINA */
+.contenedor_piepagina {
+  background-color: rgba(73, 53, 0, 1);
+  margin-top: -20px;
+  height: 200px;
+  width: auto; /* Ancho del contenedor */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Tres columnas de igual ancho */
+  padding-top: 100px;
+}
+
+.titulopie2 {
+  margin-left: 37px;
+}
+.titulopie3 {
+  margin-left: 37px;
+}
+.titulopie4 {
+  margin-left: 37px;
+}
